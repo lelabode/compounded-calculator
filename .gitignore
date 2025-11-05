@@ -1,7 +1,4 @@
-main
-statement
-weight
-tempCodeRunnerFile
+build/
 *.out
 *.o
 *.exe
