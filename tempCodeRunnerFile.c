@@ -1,21 +1,21 @@
 # include <stdio.h>
+# include <stdbool.h>
 
 int main(){
-int age = 18;
+  bool isRunning = true;
+  char response = '\0';
 
-printf("Enter your age \n :");
+  while (isRunning){
+    printf("you are playing a game\n");
+    printf("Would you like to continue? :(Y= yes), (N= no)");
+    scanf(" %c", &response);
 
-if (age >=18){
-  printf("You are an adult.");
-
-} 
-else{
-  printf ("You are a minor");
-}
-
-
-
-
-
+    if (response!= 'Y' && response != 'y'){
+      isRunning = false;
+      //printf("You exit the game\n");
+    }
+//printf("You exit the game\n");
+  }
+  printf("You exit the game\n");
   return 0;
 }
