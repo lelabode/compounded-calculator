@@ -11,7 +11,7 @@ do{
     printf("Would you like to continu? : (Y= yes), (N= no) :");
     scanf(" %c", &response);
 
-    if(response != 'Y' && response!='y'){
+    if(response != 'Y'){
       isRunning = false;
     }
 
